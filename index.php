@@ -85,35 +85,39 @@ $response = [
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Milestone 1</title>
 </head>
-<body style='background-color: black;'>
-    <div style='background-color: 2b353f;' class="d-flex justify-content-between">
+<body style='background-color: #1e2d3b;'>
+    <div style='background-color: #2b353f;' class="d-flex justify-content-between">
         <div>
             <img style='height: 40px; '; class="p-2" src="https://toppng.com/uploads/thumbnail/spotify-logo-icon-transparent-icon-spotify-11553501653zkfre5mcur.png">
-        </div>
-        <div>
-            <p class="text-light me-1">ciao</p>
         </div>
     </div>
     <div class="container">
         <div class="row row-cols-lg-5">
             <?php
             foreach($response as $dischi){
-                echo "<div style='width: 18%; margin: 5px 10px;' class='col d-flex flex-column justify-content-center align-items-center text-center border text-light'>";
+                echo "<div style='width: 18%; margin: 5px 10px; background-color: #2e3a46; ' class='col d-flex flex-column justify-content-center align-items-center text-center text-light'>";
                 foreach($dischi as $key => $testo){
                     if($key == 'poster'){
-                        echo "<img style='height: 50px; width: 50px;' src='".$testo."'>";
+                        echo "<img class='img-fluid' src='".$testo."'>";
                     }
                     elseif($key == 'title'){
                         echo $testo;
+                        echo "<br>";
                     }
                     elseif($key == 'author'){
                         echo $testo;
+                        echo "<br>";
+
                     }
                     elseif($key == 'genre'){
                         echo $testo;
+                        echo "<br>";
+
                     }
                     elseif($key == 'year'){
                         echo $testo;
+                        echo "<br>";
+
                     }
                 }
                 echo "</div>";
