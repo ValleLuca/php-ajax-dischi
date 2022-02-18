@@ -1,0 +1,19 @@
+body{
+    background-color: #1e2d3b;
+}
+
+.optHeader{
+    background-color: #2c3742;
+    height: 50px;
+}
+
+.optionImg{
+    height: 100%;
+}
+
+.boxOption{
+    background-color: #2e3a46;
+    width: 18%;
+    margin: 5px 10px;
+}
+
